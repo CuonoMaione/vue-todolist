@@ -33,7 +33,8 @@ createApp ({
                     done: false
                 }
             ],
-        
+            
+
             newElement:'',
                    
         }
@@ -41,7 +42,7 @@ createApp ({
     methods:{
         Delete(index) {
             
-            this.toDoList.splice(index);
+            this.toDoList.splice(index, 1);
         },
         addList(newElement) {
             if (newElement !== '') {
